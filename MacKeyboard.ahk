@@ -21,10 +21,10 @@ F11::SendInput {Volume_Down 5}
 F12::SendInput {Volume_Up 5} 
 
 ; Custom App Launchers
-F16::Run http://twitter.com
-F17::Run http://tumblr.com
-F18::Run http://www.reddit.com
-F19::Run https://facebook.com
+;F16::Run http://twitter.com
+;F17::Run 
+;F18::Run 
+;F19::Run 
 
 ; --------------------------------------------------------------
 ; Mac -> Windows Translation

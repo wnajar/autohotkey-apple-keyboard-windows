@@ -14,7 +14,7 @@ DetectHiddenWindows, On ; Detect apps even when minimized (ex. Spotify)
 
 ; Swap left Command/Windows key with left Alt
 ; LWin::LAlt
-; LAlt::LWin ; Comment out this line if you want to disable the left Windows key
+; LAlt::LWin
 
 ; Eject Key
 F20::SendInput {Insert}

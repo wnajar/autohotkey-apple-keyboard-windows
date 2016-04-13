@@ -13,9 +13,16 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 ; --------------------------------------------------------------
 
 ; Media Keys
+
+LAlt & F7::SendInput {Media_Prev}
 RAlt & F7::SendInput {Media_Prev}
+
+LAlt & F8::SendInput {Media_Play_Pause}
 RAlt & F8::SendInput {Media_Play_Pause}
+
+LAlt & F9::SendInput {Media_Next}
 RAlt & F9::SendInput {Media_Next}
+
 F10::SendInput {Volume_Mute}
 F11::SendInput {Volume_Down} ; Volume down by 2 ticks
 F12::SendInput {Volume_Up} ; Volume up by 2 ticks

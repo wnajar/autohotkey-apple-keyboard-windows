@@ -37,6 +37,19 @@ F10::SendInput {Volume_Mute}
 F11::SendInput {Volume_Down} ; Volume down by 2 ticks
 F12::SendInput {Volume_Up} ; Volume up by 2 ticks
 
+; Spotify Hooks
+#IfWinExist ahk_class SpotifyMainWindow ; Check if Spotify is running
+spotify = ahk_class SpotifyMainWindow ; Set variable for Spotify window name
+
+; Ctrl+Alt+End to copy track name to clipboard
+^!End:: 
+{ 
+	WinGetTitle, spotify_playing, %spotify% ; Get the title of Spotify which contains the track name
+	StringReplace, replaced_playing, spotify_playing, –, -, All ; Replace en dash with normal dash and place into 'replaced_playing'
+	clipboard = %replaced_playing% ; Copy the fixed text to clipboard
+	return 
+} 
+
 ; Custom App Launchers
 ;F16::Run http://twitter.com
 ;F17::Run 

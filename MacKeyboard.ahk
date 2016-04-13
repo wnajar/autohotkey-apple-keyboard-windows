@@ -7,7 +7,6 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #InstallKeybdHook ; Monitors keystrokes for the purpose of activating hotstrings and any keyboard hotkeys not supported by RegisterHotkey
 #SingleInstance force ; Skips the dialog box and replaces the old instance automatically when script already running
-SetTitleMatchMode 2 ; A window's title can contain WinTitle anywhere inside it to be a match
 
 
 ; --------------------------------------------------------------

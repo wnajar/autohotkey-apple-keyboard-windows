@@ -42,4 +42,4 @@ F12::SendInput {Volume_Up} ; Volume up by 2 ticks
 ;F16::Run http://twitter.com
 ;F17::Run 
 ;F18::Run 
-;F19::Run 
+;F19::Run
